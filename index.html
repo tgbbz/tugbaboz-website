@@ -1,79 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Tugba Boz's Website</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tugba Boz | AI, Robotics, & Engineering Education</title>
+  <link rel="stylesheet" href="style.css" />
   <style>
-    body {
-      background-color: white;
-      color: #003366;
-      font-family: Arial, sans-serif;
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
-    nav {
-      background-color: #f0f0f0;
-      padding: 1em;
+
+    body, html {
+      height: 100%;
+      overflow: hidden;
+    }
+
+    #bg-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      height: 100vh;
       display: flex;
-      gap: 1em;
-    }
-    nav a {
-      text-decoration: none;
-      color: #003366;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    main {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       text-align: center;
-      padding: 4em 2em;
+      padding: 2rem;
+      background-color: rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(6px);
     }
-    .gif-container {
-      margin-top: 2em;
+
+    .content img.hero-gif {
+      width: 220px;
+      margin-bottom: 1.5rem;
     }
-    .button-container {
-      margin-top: 2em;
+
+    .content h1 {
+      font-size: 3rem;
+      color: #003366;
+      margin-bottom: 1rem;
     }
-    .button-container a {
-      background-color: #007ACC;
+
+    .content p {
+      font-size: 1.25rem;
+      color: #003366;
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      background-color: #00bfff;
       color: white;
-      padding: 1em 2em;
-      text-decoration: none;
-      border-radius: 5px;
+      padding: 0.8em 1.6em;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
       font-weight: bold;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
     }
-    .contact-button {
+
+    .btn:hover {
+      background-color: #0099cc;
+    }
+
+    #contact-btn {
       position: fixed;
       bottom: 20px;
       right: 20px;
-      background-color: #007ACC;
+      background-color: #00bfff;
       color: white;
-      padding: 1em;
+      padding: 0.7em 1.2em;
       border-radius: 50px;
-      text-decoration: none;
       font-weight: bold;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+      text-decoration: none;
+      z-index: 2;
+      font-size: 0.95rem;
     }
   </style>
 </head>
 <body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="education.html">Education</a>
-    <a href="publications.html">Publications</a>
-    <a href="projects.html">Projects</a>
-    <a href="conferences.html">Conferences</a>
-  </nav>
-  <main>
+  <!-- Background Video -->
+  <video autoplay muted loop playsinline id="bg-video">
+    <source src="video1.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Main Content -->
+  <div class="content">
+    <img src="vR6mwrGRsr.gif" alt="AI animation" class="hero-gif" />
     <h1>Tugba Boz, Ph.D.</h1>
-    <p>Assistant Professor of Instructional Design and Technology</p>
-    <p>University of North Dakota</p>
-    <div class="gif-container">
-      <img src="robot.gif" alt="Robot Assistant" width="500">
-    </div>
-  </main>
-  <a class="contact-button" href="mailto:tugba.boz@und.edu">Contact Me</a>
+    <p>Assistant Professor of Instructional Design & Technology<p>
+     </p>Exploring AI, Robotics, Engineering, and Technology Integration in Education</p>
+  </div>
+
+  <!-- Contact Me Floating Button -->
+  <a href="mailto:tugba.boz@und.edu" id="contact-btn">Contact Me</a>
 </body>
 </html>
