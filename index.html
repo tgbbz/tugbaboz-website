@@ -4,100 +4,43 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Dr. Tugba Boz</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    html, body {
-      height: 100%;
-      font-family: 'Segoe UI', sans-serif;
-      color: #0a3d62;
-      overflow: hidden;
-    }
-    video {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      object-fit: cover;
-      z-index: -1;
-    }
-    .center-content {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-      color: #0a3d62;
-    }
-    .center-content h1,
-    .center-content p {
-      background: rgba(255, 255, 255, 0.85);
-      display: inline-block;
-      padding: 0.4em 1em;
-      border-radius: 10px;
-      margin: 0.3em 0;
-      font-size: 1.8em;
-      font-weight: 600;
-    }
-    .email {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: rgba(255, 255, 255, 0.85);
-      padding: 0.5em 1em;
-      border-radius: 10px;
-      font-size: 1em;
-      color: #0a3d62;
-    }
-    nav {
-      position: fixed;
-      top: 20px;
-      left: 50%;
-      transform: translateX(-50%);
-      display: flex;
-      gap: 1.5em;
-      background: rgba(255, 255, 255, 0.85);
-      padding: 0.6em 1.2em;
-      border-radius: 10px;
-      z-index: 1000;
-    }
-    nav a {
-      text-decoration: none;
-      color: #0a3d62;
-      font-weight: bold;
-      font-size: 1em;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <video autoplay muted loop playsinline>
-    <source src="video1.mp4" type="video/mp4">
+  <!-- Background Video -->
+  <video autoplay muted loop id="bg-video">
+    <source src="video1.mp4" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
 
-  <nav>
-    <a href="index.html">About</a>
-    <a href="publications.html">Publications</a>
-    <a href="conferences.html">Conference Presentations</a>
-    <a href="projects.html">Projects</a>
-  </nav>
+  <!-- Overlay for content -->
+  <div class="overlay">
 
-  <div class="center-content">
-    <h1>Dr. Tugba Boz</h1>
-    <p>Assistant Professor of Instructional Design and Technology</p>
+    <!-- Navigation Menu -->
+    <nav class="nav-bar">
+      <a href="about.html">About</a>
+      <a href="publications.html">Publications</a>
+      <a href="conferences.html">Conference Presentations</a>
+      <a href="projects.html">Projects</a>
+    </nav>
+
+    <!-- Centered Name and Position -->
+    <div class="center-text">
+      <h1>Dr. Tugba Boz</h1>
+      <h2>Assistant Professor of Instructional Design and Technology</h2>
+    </div>
+
+    <!-- Bottom right Email -->
+    <div class="email">
+      <p>tugba.boz@und.edu</p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      Dr. Tugba Boz | Assistant Professor of Instructional Design and Technology | University of North Dakota
+    </footer>
+
   </div>
-
-  <div class="email">
-    tugba.boz@und.edu
-  </div>
-
 </body>
 </html>
