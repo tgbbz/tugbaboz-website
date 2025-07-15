@@ -2,52 +2,92 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Tugba Boz – Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tugba Boz | Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <style>
-    .home-container {
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+    }
+
+    header {
+      background: #0073b1;
+      color: white;
+      padding: 1.5rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: linear-gradient(rgba(0, 115, 177, 0.9), rgba(0, 115, 177, 0.9)), url('your-photo.png') center/cover no-repeat;
+      color: white;
       text-align: center;
-      padding: 4em 2em;
+      padding: 6rem 2rem;
     }
 
-    .home-photo {
-      width: 480px;
-      height: 480px;
-      object-fit: cover;
-      margin-bottom: 1em;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
     }
 
-    h1 {
-      font-size: 2em;
-      margin-bottom: 0.5em;
+    .hero p {
+      font-size: 1.25rem;
+      max-width: 600px;
+      margin: 0 auto 2rem;
     }
 
-    .subtitle {
-      font-size: 1.1em;
-      color: #666;
+    .hero-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .hero-buttons a {
+      padding: 1rem 1.5rem;
+      background: white;
+      color: #0073b1;
+      border-radius: 4px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+
+    .hero-buttons a:hover {
+      background: #e6e6e6;
     }
   </style>
 </head>
 <body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="education.html">Education</a>
-    <a href="publications.html">Publications</a>
-    <a href="projects.html">Projects</a>
-    <a href="conferences.html">Conferences</a>
-    <a href="grants.html">Grants</a>
-  </nav>
+  <header>
+    <div><strong>Tugba Boz</strong></div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="education.html">Education</a>
+      <a href="publications.html">Publications</a>
+      <a href="projects.html">Projects</a>
+      <a href="conferences.html">Conferences</a>
+      <a href="grants.html">Grants</a>
+    </nav>
+  </header>
 
-  <main class="hero-wrapper">
-  <div class="hero-card">
-    <img src="BB9088D6-C987-466F-85F3-C8DD9D8EFE4C.png" alt="Tugba Boz" class="hero-img" />
-    <div class="hero-info">
-      <h1>Tugba Boz, Ph.D.</h1>
-      <h2>Assistant Professor of Instructional Design and Technology</h2>
-      <p>University of North Dakota</p>
+  <section class="hero">
+    <h1>Instructional Design + EdTech Research</h1>
+    <p>I’m Tugba Boz, an Assistant Professor focused on AI integration, robotics, and learning design for K–12 and teacher education.</p>
+    <div class="hero-buttons">
+      <a href="publications.html">View My Work</a>
+      <a href="mailto:tugba.boz@und.edu">Contact Me</a>
     </div>
-  </div>
-</main>
+  </section>
 </body>
 </html>
