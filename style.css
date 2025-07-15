@@ -29,3 +29,53 @@ p {
   margin-bottom: 1em;
   line-height: 1.5;
 }
+
+.hero-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  background: linear-gradient(to bottom right, #f0f4f8, #ffffff);
+  padding: 2em;
+}
+
+.hero-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: white;
+  padding: 2.5em;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  max-width: 1000px;
+  width: 100%;
+  gap: 2em;
+}
+
+.hero-img {
+  max-width: 320px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.hero-info {
+  flex: 1;
+}
+
+.hero-info h1 {
+  font-size: 2em;
+  margin-bottom: 0.3em;
+}
+
+.hero-info h2 {
+  font-weight: normal;
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+  color: #555;
+}
+
+.hero-info p {
+  font-size: 1.1em;
+  color: #444;
+}
