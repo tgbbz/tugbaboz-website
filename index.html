@@ -53,6 +53,27 @@
       font-size: 1em;
       color: #0a3d62;
     }
+    nav {
+      position: fixed;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 1.5em;
+      background: rgba(255, 255, 255, 0.85);
+      padding: 0.6em 1.2em;
+      border-radius: 10px;
+      z-index: 1000;
+    }
+    nav a {
+      text-decoration: none;
+      color: #0a3d62;
+      font-weight: bold;
+      font-size: 1em;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
@@ -62,10 +83,16 @@
     Your browser does not support the video tag.
   </video>
 
+  <nav>
+    <a href="index.html">About</a>
+    <a href="publications.html">Publications</a>
+    <a href="conferences.html">Conference Presentations</a>
+    <a href="projects.html">Projects</a>
+  </nav>
+
   <div class="center-content">
     <h1>Dr. Tugba Boz</h1>
-    <p>Assistant Professor of Instructional Design and Technology<p> 
-                 <p> University of North Dakota</p>
+    <p>Assistant Professor of Instructional Design and Technology</p>
   </div>
 
   <div class="email">
