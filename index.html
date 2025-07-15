@@ -3,109 +3,63 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tugba Boz | AI, Robotics, & Engineering Education</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Tugba Boz - Home</title>
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
-
     body, html {
       height: 100%;
-      overflow: hidden;
+      font-family: 'Arial', sans-serif;
     }
-
-    #bg-video {
+    .video-bg {
       position: fixed;
       top: 0;
       left: 0;
-      min-width: 100%;
-      min-height: 100%;
+      width: 100%;
+      height: 100%;
       object-fit: cover;
       z-index: -1;
     }
-
-    .content {
-      position: relative;
-      z-index: 1;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+    .overlay {
+      position: absolute;
+      top: 30%;
+      width: 100%;
       text-align: center;
-      padding: 2rem;
-      background-color: rgba(255, 255, 255, 0.3);
-      backdrop-filter: blur(6px);
+      color: #0a3d62; /* dark blue */
     }
-
-    .content img.hero-gif {
-      width: 220px;
-      margin-bottom: 1.5rem;
-    }
-
-    .content h1 {
+    .overlay h1 {
       font-size: 3rem;
-      color: #003366;
-      margin-bottom: 1rem;
+      background-color: rgba(255, 255, 255, 0.7);
+      display: inline-block;
+      padding: 0.5em 1em;
+      border-radius: 10px;
     }
-
-    .content p {
-      font-size: 1.25rem;
-      color: #003366;
-      margin-bottom: 2rem;
-    }
-
-    .btn {
-      background-color: #00bfff;
-      color: white;
-      padding: 0.8em 1.6em;
-      border: none;
-      border-radius: 6px;
-      font-size: 1rem;
-      font-weight: bold;
-      text-decoration: none;
-      transition: background-color 0.3s ease;
-    }
-
-    .btn:hover {
-      background-color: #0099cc;
-    }
-
-    #contact-btn {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #00bfff;
-      color: white;
-      padding: 0.7em 1.2em;
-      border-radius: 50px;
-      font-weight: bold;
-      text-decoration: none;
-      z-index: 2;
-      font-size: 0.95rem;
+    .overlay p {
+      font-size: 1.5rem;
+      margin-top: 1rem;
+      background-color: rgba(255, 255, 255, 0.7);
+      display: inline-block;
+      padding: 0.4em 1em;
+      border-radius: 8px;
     }
   </style>
 </head>
 <body>
-  <!-- Background Video -->
-  <video autoplay muted loop playsinline id="bg-video">
+
+  <!-- Background video -->
+  <video autoplay muted loop class="video-bg">
     <source src="video1.mp4" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
 
-  <!-- Main Content -->
-  <div class="content">
-    <img src="vR6mwrGRsr.gif" alt="AI animation" class="hero-gif" />
+  <!-- Text overlay -->
+  <div class="overlay">
     <h1>Tugba Boz, Ph.D.</h1>
-    <p>Assistant Professor of Instructional Design & Technology<p>
-     </p>Exploring AI, Robotics, Engineering, and Technology Integration in Education</p>
+    <p>Assistant Professor of Instructional Design and Technology</p>
   </div>
 
-  <!-- Contact Me Floating Button -->
-  <a href="mailto:tugba.boz@und.edu" id="contact-btn">Contact Me</a>
 </body>
 </html>
