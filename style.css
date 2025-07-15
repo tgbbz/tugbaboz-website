@@ -79,3 +79,76 @@ p {
   font-size: 1.1em;
   color: #444;
 }
+
+/* Fullscreen background video */
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Overlay content */
+.overlay {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  color: #003366;
+  font-family: Arial, sans-serif;
+}
+
+/* Center text */
+.center-text {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+}
+
+.center-text h1, .center-text h2 {
+  margin: 0.3em 0;
+}
+
+/* Navigation */
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  padding: 1em;
+  font-weight: bold;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: #003366;
+  background-color: rgba(255,255,255,0.85);
+  padding: 0.5em 1em;
+  border-radius: 8px;
+}
+
+/* Email bottom right */
+.email {
+  position: absolute;
+  bottom: 2em;
+  right: 2em;
+  font-size: 1rem;
+  color: #003366;
+  background-color: rgba(255,255,255,0.85);
+  padding: 0.3em 0.8em;
+  border-radius: 8px;
+}
+
+/* Footer */
+.footer {
+  position: absolute;
+  bottom: 0.5em;
+  width: 100%;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #003366;
+  background-color: rgba(255,255,255,0.75);
+  padding: 0.5em 0;
+}
