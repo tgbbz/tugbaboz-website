@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Name</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dr. Tugba Boz</title>
   <style>
     * {
       margin: 0;
@@ -13,7 +13,7 @@
     html, body {
       height: 100%;
       font-family: 'Segoe UI', sans-serif;
-      color: #0a3d62; /* Dark blue */
+      color: #0a3d62;
       overflow: hidden;
     }
     video {
@@ -25,28 +25,33 @@
       object-fit: cover;
       z-index: -1;
     }
-    .overlay {
+    .center-content {
       position: absolute;
-      top: 3%;
-      width: 100%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       text-align: center;
       color: #0a3d62;
     }
-    .overlay h1 {
-      font-size: 3em;
-      font-weight: bold;
+    .center-content h1,
+    .center-content p {
       background: rgba(255, 255, 255, 0.85);
       display: inline-block;
-      padding: 0.5em 1.5em;
-      border-radius: 12px;
-      margin-bottom: 0.3em;
+      padding: 0.4em 1em;
+      border-radius: 10px;
+      margin: 0.3em 0;
+      font-size: 1.8em;
+      font-weight: 600;
     }
-    .overlay p {
-      font-size: 1.4em;
+    .email {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
       background: rgba(255, 255, 255, 0.85);
-      display: inline-block;
-      padding: 0.3em 1em;
-      border-radius: 8px;
+      padding: 0.5em 1em;
+      border-radius: 10px;
+      font-size: 1em;
+      color: #0a3d62;
     }
   </style>
 </head>
@@ -54,11 +59,17 @@
 
   <video autoplay muted loop playsinline>
     <source src="video1.mp4" type="video/mp4">
+    Your browser does not support the video tag.
   </video>
 
-  <div class="overlay">
+  <div class="center-content">
     <h1>Dr. Tugba Boz</h1>
-    <p>Assistant Professor of Instructional Design and Technology, University of North Dakota</p>
+    <p>Assistant Professor of Instructional Design and Technology<p> 
+                 <p> University of North Dakota</p>
+  </div>
+
+  <div class="email">
+    tugba.boz@und.edu
   </div>
 
 </body>
