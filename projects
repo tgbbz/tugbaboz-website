@@ -79,7 +79,6 @@
     <a href="index.html" title="Home">Home</a>
     <a href="about.html" title="About Tugba Boz">About</a>
     <a href="publications.html" title="Tugba Boz's Publications">Publications</a>
-    <a href="conferences.html" title="Conference Presentations">Conference Presentations</a>
     <a href="projects.html" title="Research and Educational Projects">Projects</a>
     <a href="contact.html" title="Contact Tugba Boz">Contact</a>
   </nav>
@@ -92,7 +91,7 @@
       <h2>Teaching Artificial Intelligence to Pre-Service Elementary Teachers</h2>
       <span class="tag">AI Education</span>
       <p>
-        This project explores how elementary teacher candidates can meaningfully engage with AI concepts through hands-on activities, robotics, and classroom integration. It aims to prepare future teachers to embed AI literacy into core subject areas and foster equitable and age-appropriate AI understanding in K–6 settings.
+        This project explores how elementary teacher candidates can meaningfully engage with AI concepts through hands-on activities, robotics, and classroom integration. It aims to prepare future teachers to embed AI literacy into core subject areas and foster age-appropriate AI understanding in elementary school settings.
       </p>
     </div>
 
@@ -100,7 +99,7 @@
       <h2>STEM Strong</h2>
       <span class="tag">NSF DRK–12</span>
       <p>
-        Funded by the National Science Foundation (DRK–12), STEM Strong provides professional development and curriculum support to rural educators implementing interdisciplinary STEM teaching strategies. The program focuses on self-efficacy, place-based learning, and contextualized science education.
+        Funded by the National Science Foundation (DRK–12), STEM STRONG provides supports to teachers and promotes science and engineering in elementary classrooms.
       </p>
     </div>
 
@@ -108,7 +107,7 @@
       <h2>My Home, My Health</h2>
       <span class="tag">NIH SEPA</span>
       <p>
-        Supported by the NIH SEPA program, this initiative engages youth and families in health education through culturally relevant, community-based STEM learning. It emphasizes environmental health literacy and empowers students to explore health issues in their own homes and communities.
+        Supported by the NIH SEPA program, this initiative empowers students to explore disease ecology concepts in their communities.
       </p>
     </div>
 
