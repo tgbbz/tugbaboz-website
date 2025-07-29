@@ -50,11 +50,11 @@
 
     .contact-item {
       margin-bottom: 1.5em;
+      font-size: 1.1rem;
     }
 
     .contact-item a {
       color: #003366;
-      font-size: 1.05rem;
       text-decoration: none;
     }
 
@@ -62,21 +62,17 @@
       color: #0055aa;
       text-decoration: underline;
     }
-
-    .icon {
-      vertical-align: middle;
-      margin-right: 8px;
-    }
   </style>
 </head>
 <body>
 
   <nav>
-    <a href="index.html" title="Home">Home</a>
-    <a href="about.html" title="About Tugba Boz">About</a>
-    <a href="publications.html" title="Tugba Boz's Publications">Publications</a>
-    <a href="projects.html" title="Research and Educational Projects">Projects</a>
-    <a href="contact.html" title="Contact Tugba Boz">Contact</a>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="publications.html">Publications</a>
+    <a href="conferences.html">Conference Presentations</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
   </nav>
 
   <div class="container">
@@ -84,6 +80,10 @@
 
     <div class="contact-item">
       📧 <a href="mailto:tugba.boz@und.edu">tugba.boz@und.edu</a>
+    </div>
+
+    <div class="contact-item">
+      🐦 <a href="https://twitter.com/yourhandle" target="_blank" rel="noopener noreferrer">X (Twitter)</a>
     </div>
 
     <div class="contact-item">
