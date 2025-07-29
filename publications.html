@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Publications - Dr. Tugba Boz</title>
+  <link rel="stylesheet" href="style.css" />
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -11,6 +12,30 @@
       padding: 2em;
       background-color: white;
       color: #003366;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      padding: 1em 0;
+      background-color: white;
+      border-bottom: 1px solid #ccc;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #003366;
+      padding: 8px;
+      font-size: 1rem;
+      font-weight: bold;
+      transition: color 0.3s, text-decoration 0.3s;
+    }
+
+    nav a:hover {
+      color: #0055aa;
+      text-decoration: underline;
     }
 
     .container {
@@ -37,11 +62,33 @@
     li {
       margin-bottom: 1em;
     }
+
+    a.doi-link {
+      display: block;
+      margin-top: 4px;
+      font-size: 0.9em;
+      color: #0055aa;
+    }
+
+    a.doi-link:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="publications.html">Publications</a>
+    <a href="conferences.html">Conference Presentations</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
   <div class="container">
     <h1>Publications</h1>
+
 
     <h2>Journals</h2>
     <ol>
