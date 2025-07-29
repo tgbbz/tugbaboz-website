@@ -3,48 +3,82 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Tugba Boz, Ph.D., Assistant Professor at the University of North Dakota." />
   <title>Tugba Boz</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
       background-color: white;
-      color: #003366; /* Dark blue */
+      color: #003366;
     }
+
     header {
       text-align: center;
       padding-top: 50px;
     }
+
     header h1 {
       margin: 0;
-      font-size: 2em;
+      font-size: 2rem;
     }
+
     header h2 {
       margin: 5px 0 20px;
       font-weight: normal;
+      font-size: 1.25rem;
     }
+
     nav {
-      text-align: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
       margin-top: 30px;
     }
+
     nav a {
       text-decoration: none;
       color: #003366;
-      margin: 0 15px;
-      font-size: 1.1em;
+      padding: 8px;
+      font-size: 1rem;
       font-weight: bold;
+      transition: color 0.3s, text-decoration 0.3s;
     }
+
+    nav a:hover {
+      color: #0055aa;
+      text-decoration: underline;
+    }
+
     .photo-container {
       display: flex;
       justify-content: center;
       align-items: center;
       margin-top: 40px;
+      padding: 0 20px;
     }
+
     .photo-container img {
-      height: 35vh;
+      height: 50vh;
       width: auto;
       max-width: 100%;
       border-radius: 20px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+
+      header h2 {
+        font-size: 1rem;
+      }
+
+      nav a {
+        font-size: 0.95rem;
+      }
     }
   </style>
 </head>
@@ -55,15 +89,15 @@
   </header>
 
   <nav>
-    <a href="about.html">About</a>
-    <a href="publications.html">Publications</a>
-    <a href="conferences.html">Conference Presentations</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contact</a>
+    <a href="about.html" title="About Tugba Boz">About</a>
+    <a href="publications.html" title="Tugba Boz's Publications">Publications</a>
+    <a href="conferences.html" title="Conference Presentations">Conference Presentations</a>
+    <a href="projects.html" title="Research and Educational Projects">Projects</a>
+    <a href="contact.html" title="Contact Tugba Boz">Contact</a>
   </nav>
 
   <div class="photo-container">
-    <img src="photo1.png" alt="Tugba Boz Photo">
+    <img src="photo1.png" alt="Portrait of Tugba Boz">
   </div>
 </body>
 </html>
