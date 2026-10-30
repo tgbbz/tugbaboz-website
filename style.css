@@ -76,7 +76,6 @@ h2 {
 }
 h3 { font-size: 1rem; line-height: 1.45; margin: 0 0 4px; color: var(--ink); }
 p { margin: 0 0 14px; }
-.subtitle { color: var(--muted); margin: -8px 0 0; }
 
 /* Home */
 .intro { display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 36px; align-items: start; }
