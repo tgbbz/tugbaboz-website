@@ -2,110 +2,87 @@
 <html lang="en">
 <head>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-M09WY3KS6V"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-M09WY3KS6V');
-</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-M09WY3KS6V"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-M09WY3KS6V');
+  </script>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Tugba Boz, Ph.D., Assistant Professor at the University of North Dakota." />
-  <title>Tugba Boz</title>
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: white;
-      color: #003366;
-    }
-
-    header {
-      text-align: center;
-      padding-top: 50px;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
-    }
-
-    header h2 {
-      margin: 5px 0 20px;
-      font-weight: normal;
-      font-size: 1.25rem;
-    }
-
-    nav {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 10px;
-      margin-top: 30px;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: #003366;
-      padding: 8px;
-      font-size: 1rem;
-      font-weight: bold;
-      transition: color 0.3s, text-decoration 0.3s;
-    }
-
-    nav a:hover {
-      color: #0055aa;
-      text-decoration: underline;
-    }
-
-    .photo-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 40px;
-      padding: 0 20px;
-    }
-
-    .photo-container img {
-      height: 50vh;
-      width: auto;
-      max-width: 100%;
-      border-radius: 20px;
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 1.5rem;
-      }
-
-      header h2 {
-        font-size: 1rem;
-      }
-
-      nav a {
-        font-size: 0.95rem;
-      }
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tugba Boz, Ph.D.</title>
+  <meta name="description" content="Tugba Boz, Ph.D., Assistant Professor of Instructional Design and Technology at the University of North Dakota, studies how rural teachers learn computing, AI, and engineering." />
+  <meta property="og:title" content="Tugba Boz, Ph.D." />
+  <meta property="og:description" content="Assistant Professor of Instructional Design and Technology at the University of North Dakota." />
+  <meta property="og:image" content="https://tugbaboz.com/photo1.png" />
+  <meta property="og:url" content="https://tugbaboz.com/" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Tugba Boz, Ph.D.</h1>
-    <h2>Assistant Professor | University of North Dakota</h2>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">Tugba Boz, Ph.D.</a>
+      <nav class="site-nav" aria-label="Main">
+        <a href="about.html">About</a>
+        <a href="publications.html">Publications</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <nav>
-    <a href="about.html" title="About Tugba Boz">About</a>
-    <a href="publications.html" title="Tugba Boz's Publications">Publications</a>
-    <a href="projects.html" title="Research and Educational Projects">Projects</a>
-    <a href="contact.html" title="Contact Tugba Boz">Contact</a>
-  </nav>
+  <main id="main" class="wrap">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">Assistant Professor · University of North Dakota</p>
+        <h1>Tugba Boz, Ph.D.</h1>
+        <p class="lede">My research examines how rural teachers learn computing including AI and engineering and integrate them into their classrooms in ways that connect to their students’ communities.</p>
+        <div class="actions">
+          <a class="button" href="publications.html">Publications</a>
+          <a class="button secondary" href="projects.html">Projects</a>
+          <a class="button secondary" href="mailto:tugba.boz@und.edu">Email</a>
+        </div>
+      </div>
+      <img class="hero-photo" src="photo1.png" width="1486" height="597"
+           alt="Tugba Boz holding a small robot car while presenting a slide about the Zumi AI robot" />
+    </section>
 
-  <div class="photo-container">
-    <img src="photo1.png" alt="Portrait of Tugba Boz">
-  </div>
+    <section>
+      <h2>Current projects</h2>
+      <div class="cards">
+        <article class="card">
+          <span class="tag">NSF CyberAICorps</span>
+          <h3>CyberAI Innovation: Expanding Workforce Pathways into Cybersecurity and AI</h3>
+          <p>Brings AI and cybersecurity into career and technical education in North Dakota. I lead the project as principal investigator.</p>
+        </article>
+        <article class="card">
+          <span class="tag">UND Early Career Scholars</span>
+          <h3>AI-Powered Teacher Support System for Classroom Talk</h3>
+          <p>Develops an AI-powered system that gives rural elementary teachers a report on patterns in their questioning and feedback.</p>
+        </article>
+      </div>
+      <p class="more"><a href="projects.html">All projects →</a></p>
+    </section>
+
+    <section>
+      <h2>Recent publications</h2>
+      <ol class="pubs">
+        <li>Hammack, R., Robinson, J., Gist, J., Lee, M., &amp; <b>Boz, T.</b> (2026). Understanding how elementary teachers characterize science and engineering lessons and their connection to practice. <i>Journal of Science Teacher Education</i>. <a class="pub-link" href="https://doi.org/10.1080/1046560X.2026.2706373">https://doi.org/10.1080/1046560X.2026.2706373</a></li>
+        <li>Park, H., <b>Boz, T.</b>, Sawyer, A., &amp; Willingham, J. C. (2026). Exploring robot programming in a geometry content course: Learning opportunities for prospective teachers. <i>Contemporary Issues in Technology and Teacher Education, 26</i>(1), 85–115. <a class="pub-link" href="https://citejournal.org/volume-26/issue-1-26/mathematics/exploring-robot-programming-in-a-geometry-content-course-learning-opportunities-for-prospective-teachers/">https://citejournal.org/volume-26/issue-1-26/mathematics/exploring-robot-programming-in-a-geometry-content-course-learning-opportunities-for-prospective-teachers/</a></li>
+        <li>Inouye, M. C., Summers, R., Lee, M. J., Cabrera, L. N., Macias, M., Gist, J., <b>Boz, T.</b>, Beard, S., &amp; Davis, D. (2026). Learn-Modify-Implement-Reflect: Delivering formative assessment and reflecting on student learning in elementary teacher professional learning. <i>Journal of Science Teacher Education</i>. <a class="pub-link" href="https://doi.org/10.1080/1046560X.2026.2656142">https://doi.org/10.1080/1046560X.2026.2656142</a></li>
+      </ol>
+      <p class="more"><a href="publications.html">All publications →</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>Tugba Boz, Ph.D. · Assistant Professor of Instructional Design and Technology, University of North Dakota</p>
+      <p><a href="mailto:tugba.boz@und.edu">tugba.boz@und.edu</a></p>
+    </div>
+  </footer>
 </body>
 </html>
