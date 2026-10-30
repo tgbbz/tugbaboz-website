@@ -7,7 +7,6 @@
   --muted: #586777;
   --line: #dbe3ec;
   --soft: #f3f6fa;
-  --chip: #e3edf9;
   --focus: #f2a900;
   --radius: 14px;
   --serif: Georgia, "Iowan Old Style", "Palatino Linotype", "Times New Roman", serif;
@@ -153,20 +152,11 @@ h2 {
   color: var(--navy);
   font-size: 1.18rem;
   line-height: 1.35;
-  margin: 12px 0 8px;
+  margin: 0 0 8px;
   padding: 0;
   border: 0;
 }
 .card p { margin: 0; }
-.tag {
-  display: inline-block;
-  padding: 3px 10px;
-  border-radius: 999px;
-  background: var(--chip);
-  color: var(--navy);
-  font-size: 0.8rem;
-  font-weight: 600;
-}
 
 /* Publications */
 .jump { display: flex; flex-wrap: wrap; gap: 8px 22px; margin: 16px 0 0; padding: 0; list-style: none; }
